@@ -1,0 +1,472 @@
+/*  general*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 18px 0px 87px 0px rgb(10 15 70 /7%);
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  padding-left: -15px;
+  padding-right: -15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* header */
+header {
+  position: relative;
+}
+
+header .container {
+  background: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 240px;
+  padding-left: 380px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+
+.nav-loge img {
+  width: 90px;
+  border-radius: 100%;
+
+}
+
+.nav-loge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+
+.nav-bar ul {
+  display: flex;
+  margin-bottom: 30px;
+  justify-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.nav-bar li {
+  margin-right: 20px;
+margin-top: 20px;
+}
+.nav-bar li.active {
+  border-bottom: 2px solid red;
+}
+
+.nav-bar li a span {
+  color: white;
+  font-size: 20px;
+
+}
+
+.nav-loge h3 {
+  color: white;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.nav-bar li a:hover {
+
+  border-bottom: 2px solid red;
+  transition: .3s;
+}
+
+/* welcome */
+
+.welcome .info {
+  text-align: center;
+}
+
+.info h2 {
+  padding: 20px;
+  font-size: 40px;
+
+}
+
+.info p {
+
+  font-size: 20px;
+  color: #666;
+}
+
+main {
+  background-color: #fdfdfd;
+}
+
+/* welcome */
+.articles {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  padding-left: 380px;
+}
+
+.articles .container {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 20px;
+}
+
+.articles .box img {
+  width: 250px;
+}
+
+.articles .box {
+  width: min-content;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  background-color: white;
+  border-radius: 6px;
+  transition: .3s;
+}
+
+.articles .box .content {
+  padding: 20px;
+}
+
+.articles .box .content h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(195, 6, 78);
+  margin-bottom: 10px;
+}
+
+.articles .box .content p {
+
+  color: #777;
+
+}
+
+.articles .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+
+}
+
+.articles .box .info span {
+  padding: 20px 25px 20px 20px;
+  color: rgb(222, 77, 14);
+
+}
+
+/* footer */
+
+.footer .container {
+  padding-left: 380px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer .box-frist img {
+  width: 600px;
+  height: 200px;
+  border-radius: 16px;
+}
+
+.footer .box-frist img:hover {
+  transform: rotate(2deg) scale(1);
+}
+
+.footer .box-second {
+  margin-left: 20px;
+}
+
+.footer .box-second h3 {
+  color: red;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.footer .box-second p {
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: #777;
+}
+
+.footer .box-second .info {
+  text-align: end;
+  margin-right: 15px;
+}
+
+.footer .box-second .info a {
+  background-color: rgb(66, 119, 217);
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.footer .box-second .info a:hover {
+  background-color: rgb(31, 92, 206);
+  transition: .3s;
+
+}
+
+
+.footer .footer-copy {
+  text-align: center;
+  color: rgb(147, 141, 141);
+  font-size: 15px;
+}
+
+/* About page */
+
+.avatar {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  padding-left: 380px;
+}
+
+.avatar .container {
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  gap: 40px;
+
+}
+
+
+
+.avatar .box {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: .3s;
+
+}
+
+
+.avatar .box .content {
+  padding: 20px;
+}
+
+.avatar .box .content h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(9, 37, 139);
+  margin-top: 5px;
+}
+
+.avatar .box .content p {
+
+  color: #777;
+  margin-top: 30px;
+
+
+}
+
+.avatar .box .content span {
+  color: red;
+  margin-top: 20px;
+}
+
+.avatar .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+
+}
+
+.avatar .wi {
+  margin-top: 80px;
+  background: url(../img/sea-car.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  width: 1500px;
+  height: 200px;
+}
+
+
+.footer .box-sec h3 {
+  color: rgb(29, 202, 10);
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.footer .box-sec p {
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.footer .box-sec {
+  margin-left: 20px;
+}
+
+
+/* Contact Page */
+
+.contact-from {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  padding-left: 380px;
+}
+
+.contact-from .container {
+  display: flex;
+  align-items: center;
+
+
+}
+
+
+
+.fA {
+  margin-left: 200px;
+}
+
+.fA [type="submit"] {
+  display: block;
+  background-color: red;
+  font-size: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 6;
+  margin-top: 20px;
+  margin-left: 400px;
+  padding: 8px;
+}
+
+
+.fA [type="submit"]:hover {
+  color: rgb(221, 13, 13);
+  background-color: white;
+  transition: .3s;
+}
+
+.fA input:not([type="submit"]),
+.fA form textarea {
+  width: 400px;
+  display: block;
+  padding: 12px 5px;
+  border-style: none;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.fA input:not([type="submit"]):focus ,
+.fA form textarea {
+  outline: none;
+}
+
+
+.fA textarea {
+  width: 400px;
+  height: 200px;
+}
+
+.adderss {
+  margin-bottom: 200px;
+  margin-left: 40px;
+  padding: 20px;
+}
+
+.adderss h2 {
+  color: rgb(210, 141, 12);
+  padding: 20px;
+  font-size: 30px;
+
+}
+
+.adderss p {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.fA pre {
+  font-size: 15px;
+}
+
+/* FQAs */
+
+.fqa {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  padding-left: 380px;
+}
+
+.fqa .info {
+  margin-right: 200px;
+  text-align: center;
+}
+
+
+.cheek {
+  margin-left: 200px;
+}
+
+.cheek p {
+  text-align: center;
+  color: #777;
+  border: 2px solid #cccc;
+  padding: 10px;
+  margin: 30px;
+  width: max-content;
+}
+
+.cheek p:hover {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  transition: .3s;
+}
+
+.footer-copyy {
+  text-align: center;
+  color: #777;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(31, 92, 206);
+
+}
